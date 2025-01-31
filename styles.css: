@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+#dinosaur-container {
+    position: relative;
+}
+
+#dinosaur {
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 0.5s ease-out;
+}
+
+#dinosaur.explode {
+    opacity: 1;
+    transform: scale(1);
+}
